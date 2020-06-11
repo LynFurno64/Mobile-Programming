@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: "Times New Roman", Times, serif;
+	margin: 0;
+}
+
+table {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background-image: url(../images/coral-reef.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-shadow: 2px 2px GhostWhite;
+  color: black;
+}
+
+/* Style the navigation bar */
+.navbar {
+  display: flex;
+  background-color: Navy;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: Aqua;
+  color: black;
+}
+
+/* Sidebar/left column */
+.side {
+  flex: 50%;
+  background-color: white;
+  padding: 20px;
+}
+
+.bottomleft {
+  flex: 50%;
+  background-color: Gold;
+  padding: 20px;
+}
+
+.bottomright {
+  flex: 50%;
+  background-color: Gold;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 50%;
+  background-color: Gold;
+  padding: 20px;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: LightSkyBlue;
+}
+
+/* Image */
+img {
+  background-color: #aaa;
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+/* For device width 400px and larger: */
+@media only screen and (max-width: 400px) {
+  .header {
+     background-image: url("../images/DeepWaterCoral.jpg");
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .row, .navbar {
+    flex-direction: column;
+  }
+}
